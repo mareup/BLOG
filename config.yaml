@@ -1,4 +1,4 @@
-baseurl: https://mareup.github.io/BLOG
+baseurl: https://r-higurashi.netlify.app/
 languageCode: ja
 theme: hugo-theme-stack
 paginate: 5
