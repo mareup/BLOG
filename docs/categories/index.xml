@@ -5,59 +5,13 @@
     <link>/categories/</link>
     <description>Recent content in Categories on R日夜</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
       <link>/categories/test/</link>
-      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/categories/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>测试</title>
-      <link>/categories/%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/%E6%B5%8B%E8%AF%95/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>syntax</title>
-      <link>/categories/syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/syntax/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>/categories/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test with whitespaces</title>
-      <link>/categories/test-with-whitespaces/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/test-with-whitespaces/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
