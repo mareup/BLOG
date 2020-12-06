@@ -41,7 +41,7 @@ params:
   sidebar:
     avatar: img/avatar.png
     emoji: "\U0001F365"
-    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    subtitle: "Rとかいろいろやります"
   widgets:
     archives:
       limit: 5
