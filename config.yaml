@@ -41,7 +41,7 @@ params:
   sidebar:
     avatar: "img/avatar.png"
     emoji: "\U00002695"
-    subtitle: "Rとかいろいろやります"
+    subtitle: "Rとかいろいろやります。"
   widgets:
     archives:
       limit: 5
