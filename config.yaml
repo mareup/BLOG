@@ -39,8 +39,8 @@ params:
       site: ''
   rssFullContent: yes
   sidebar:
-    avatar: img/avatar.png
-    emoji: "\U0001F365"
+    avatar: "img/avatar.png"
+    emoji: "\U00002695"
     subtitle: "Rとかいろいろやります"
   widgets:
     archives:
