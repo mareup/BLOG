@@ -6,6 +6,21 @@
         <description>Recent content on R日夜</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sun, 06 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Fri, 11 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>はじめに</title>
+        <link>/p/20201211/</link>
+        <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>/p/20201211/</guid>
+        <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+&lt;p&gt;これから、このブログをつかっていろいろ書いてみることにしてる。
+なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。&lt;/p&gt;
+&lt;p&gt;このブログは、個人の意見をもとにRとかその他諸々を書いていく。&lt;/p&gt;
+&lt;h2 id=&#34;読み方&#34;&gt;読み方&lt;/h2&gt;
+&lt;p&gt;雑記のタグのものは、内容無いので飛ばしてくれて構わない。
+あとは、タグどおりにいろいろ書く予定。まえに書いてたブログの分もそのうち移行するのでお楽しみに。&lt;/p&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>
