@@ -6,19 +6,55 @@
         <description>Recent content on R日夜</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Fri, 11 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>blogdownはじめてみた。1</title>
+        <link>/p/20201212/</link>
+        <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>/p/20201212/</guid>
+        <description>
+&lt;link href=&#34;./p/20201212/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;./p/20201212/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;blogdownについて&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;blogdownについて&lt;/h1&gt;
+&lt;p&gt;そうたいした内容ではないですが、このブログも&lt;strong&gt;blogdown&lt;/strong&gt;を使っているので、軽く説明してみようかなと。&lt;/p&gt;
+&lt;p&gt;まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。 ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。 go言語で作られてる。&lt;/p&gt;
+&lt;div id=&#34;install&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;install&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;remotes::install_github(&amp;quot;rstudio/blogdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;hugoも入れるんだぜい。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::install_hugo()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ここまですすめたら、スタート地点にたったも同じ。&lt;/p&gt;
+&lt;p&gt;この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。 すごいめんどいから、おすすめしない。 たぶん、vagrantだとこの時点で詰む。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;今日はここらへんで。 こんな感じでゆるくやってくので。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>はじめに</title>
         <link>/p/20201211/</link>
         <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
         
         <guid>/p/20201211/</guid>
-        <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
-&lt;p&gt;これから、このブログをつかっていろいろ書いてみることにしてる。
-なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。&lt;/p&gt;
+        <description>
+&lt;link href=&#34;./p/20201211/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;./p/20201211/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;はじめに&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;はじめに&lt;/h1&gt;
+&lt;p&gt;これから、このブログをつかっていろいろ書いてみることにしてる。 なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。&lt;/p&gt;
 &lt;p&gt;このブログは、個人の意見をもとにRとかその他諸々を書いていく。&lt;/p&gt;
-&lt;h2 id=&#34;読み方&#34;&gt;読み方&lt;/h2&gt;
-&lt;p&gt;雑記のタグのものは、内容無いので飛ばしてくれて構わない。
-あとは、タグどおりにいろいろ書く予定。まえに書いてたブログの分もそのうち移行するのでお楽しみに。&lt;/p&gt;
+&lt;div id=&#34;読み方&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;読み方&lt;/h2&gt;
+&lt;p&gt;雑記のタグのものは、内容無いので飛ばしてくれて構わない。 あとは、タグどおりにいろいろ書く予定。まえに書いてたブログの分もそのうち移行するのでお楽しみに。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
         </item>
         

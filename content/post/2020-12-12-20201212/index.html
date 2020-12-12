@@ -1,0 +1,34 @@
+---
+title: 'blogdownはじめてみた。1'
+author: ~
+date: '2020-12-12'
+slug: '20201212'
+categories: ["R"]
+tags: ["R", "blogdown"]
+---
+
+<link href="{{< relref "post/2020-12-12-20201212/index.html" >}}index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="{{< relref "post/2020-12-12-20201212/index.html" >}}index_files/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="blogdownについて" class="section level1">
+<h1>blogdownについて</h1>
+<p>そうたいした内容ではないですが、このブログも<strong>blogdown</strong>を使っているので、軽く説明してみようかなと。</p>
+<p>まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。<br />
+ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。<br />
+go言語で作られてる。</p>
+<div id="install" class="section level2">
+<h2>install</h2>
+<pre class="r"><code>remotes::install_github(&quot;rstudio/blogdown&quot;)</code></pre>
+<hr />
+<p>hugoも入れるんだぜい。</p>
+<pre class="r"><code>blogdown::install_hugo()</code></pre>
+<p>ここまですすめたら、スタート地点にたったも同じ。</p>
+<p>この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。<br />
+すごいめんどいから、おすすめしない。<br />
+たぶん、vagrantだとこの時点で詰む。</p>
+<hr />
+<p>今日はここらへんで。<br />
+こんな感じでゆるくやってくので。</p>
+</div>
+</div>
