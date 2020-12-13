@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='blogdownについて そうたいした内容ではないですが、このブログもblogdownを使っているので、軽く説明してみようかなと。 まず、blo'><title>blogdownはじめてみた。1</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='themeを選ぶ blogdownをはじめたら、次はthemeをえらぶ。 あんまり説明されてないけど、hugoのthemeがblogdownに対'><title>blogdownはじめました。2</title>
 
-<link rel='canonical' href='../../p/20201212/'>
+<link rel='canonical' href='../../p/blogdown-2/'>
 
-<link rel="stylesheet" href="../../scss/style.min.css"><meta property='og:title' content='blogdownはじめてみた。1'>
-<meta property='og:description' content='blogdownについて そうたいした内容ではないですが、このブログもblogdownを使っているので、軽く説明してみようかなと。 まず、blo'>
-<meta property='og:url' content='/p/20201212/'>
+<link rel="stylesheet" href="../../scss/style.min.css"><meta property='og:title' content='blogdownはじめました。2'>
+<meta property='og:description' content='themeを選ぶ blogdownをはじめたら、次はthemeをえらぶ。 あんまり説明されてないけど、hugoのthemeがblogdownに対'>
+<meta property='og:url' content='/p/blogdown-2/'>
 <meta property='og:site_name' content='R日夜'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='R' /><meta property='article:tag' content='blogdown' /><meta property='article:published_time' content='2020-12-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-12-12T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="blogdownはじめてみた。1">
-<meta name="twitter:description" content="blogdownについて そうたいした内容ではないですが、このブログもblogdownを使っているので、軽く説明してみようかなと。 まず、blo">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='R' /><meta property='article:tag' content='blogdown' /><meta property='article:published_time' content='2020-12-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-12-13T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="blogdownはじめました。2">
+<meta name="twitter:description" content="themeを選ぶ blogdownをはじめたら、次はthemeをえらぶ。 あんまり説明されてないけど、hugoのthemeがblogdownに対">
     </head>
     <body class="">
         <div class="container flex on-phone--column align-items--flex-start extended article-page with-toolbar">
@@ -151,7 +151,7 @@
     
 
     <h2 class="article-title">
-        <a href="../../p/20201212/">blogdownはじめてみた。1</a>
+        <a href="../../p/blogdown-2/">blogdownはじめました。2</a>
     </h2>
 
     <footer class="article-time">
@@ -163,36 +163,58 @@
 
 
 
-        <time class="article-time--published">Dec 12, 2020</time>
+        <time class="article-time--published">Dec 13, 2020</time>
     </footer></div>
 </header>
 
     <section class="article-content">
     
-<link href="../../p/20201212/index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="../../p/20201212/index_files/anchor-sections/anchor-sections.js"></script>
+<link href="../../p/blogdown-2/index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="../../p/blogdown-2/index_files/anchor-sections/anchor-sections.js"></script>
 
 
-<div id="blogdownについて" class="section level1">
-<h1>blogdownについて</h1>
-<p>そうたいした内容ではないですが、このブログも<strong>blogdown</strong>を使っているので、軽く説明してみようかなと。</p>
-<p>まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。<br />
-ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。<br />
-go言語で作られてる。</p>
-<div id="install" class="section level2">
-<h2>install</h2>
-<pre class="r"><code>remotes::install_github(&quot;rstudio/blogdown&quot;)</code></pre>
-<hr />
-<p>hugoも入れるんだぜい。</p>
-<pre class="r"><code>blogdown::install_hugo()</code></pre>
-<p>ここまですすめたら、スタート地点にたったも同じ。</p>
-<p>この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。<br />
-すごいめんどいから、おすすめしない。<br />
-たぶん、vagrantだとこの時点で詰む。</p>
-<hr />
-<p>今日はここらへんで。<br />
-こんな感じでゆるくやってくので。</p>
+<div id="themeを選ぶ" class="section level2">
+<h2>themeを選ぶ</h2>
+<p>blogdownをはじめたら、次はthemeをえらぶ。<br />
+あんまり説明されてないけど、hugoのthemeがblogdownに対応しているかというとそうでもなくて、だいたい運が悪いとここで詰みます。<br />
+簡単にすませるとしたら、先人がつかってるthemeをそのまま使うといい。<br />
+ちなみに、このblogのthemeは<strong>stack</strong>を使っているけど、blogdownに完全に対応してるわけじゃないので少し使い勝手がわるい。 たぶん、そのうち、hugo単体に切り替えていくと思う。そのほうがいいし、rmarkdownも普通に使えるからね。(工夫が必要になるけど)</p>
+<ul>
+<li><a href="https://themes.gohugo.io/">themeを選ぶ場合はこちら</a></li>
+</ul>
+<pre class="r"><code># このサイトのtheme
+blogdown::install_theme(&quot;CaiJimmy/hugo-theme-stack&quot;)</code></pre>
 </div>
+<div id="configをいじる" class="section level2">
+<h2>configをいじる</h2>
+<p>次は、config.tomlをいじる必要がある。</p>
+<p>config.tomlに関しては、他のサイトを見てもらったほうがいいと思う。<br />
+というのも、このサイトで使ってるthemeは<em>config.yaml</em>だし、記述方法が違う。githubを参照してもらってもいいけど、あまり面倒なことをしたくないなら、他のサイトを参考にしたほうが圧倒的に良い。</p>
+<div id="最低限いじった方がいいもの" class="section level3">
+<h3>最低限いじった方がいいもの</h3>
+<ul>
+<li>baseurl</li>
+<li>languageCode</li>
+<li>title</li>
+<li>author</li>
+<li>DefaultcontentLanguage</li>
+<li>publishDir</li>
+<li>ignoreFiles</li>
+<li>relativeurls</li>
+<li>hasCJKLanguage</li>
+</ul>
+</div>
+</div>
+<div id="netlify.tomlをいじる" class="section level2">
+<h2>netlify.tomlをいじる</h2>
+<p>これは、必要なのかしらんけど、netlify考えてる人はいじろう。</p>
+<pre class="toml"><code>
+publish = &quot;docs&quot;
+</code></pre>
+<hr />
+<p>blogdownのめんどくさいところは、これで全部だと思う。<br />
+あとは、まあうまくやってくれとしか言いようがない。</p>
+<p>どうであれ、楽して記事をかけるのは悦びだと思うぞ。</p>
 </div>
 
 </section>
@@ -235,12 +257,12 @@ go言語で作られてる。</p>
                 
                     
 <article class="">
-    <a href="../../p/blogdown-2/">
+    <a href="../../p/20201212/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">blogdownはじめました。2</h2>
+            <h2 class="article-title">blogdownはじめてみた。1</h2>
         </div>
     </a>
 </article>

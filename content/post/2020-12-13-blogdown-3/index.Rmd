@@ -1,0 +1,62 @@
+---
+title: blogdownはじめました。3
+author: ~
+date: '2020-12-14'
+slug: blogdown-3
+categories: ["R"]
+tags: ["R", "blogdown"]
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+
+```
+
+## 記事を書く
+
+いやあ、記事を書くのが、まためんどい。いや、めんどいっていうか、たぶん普通の設定ならうまくいくんだろうな。けど、うまくいかないからめんどいし、このめんどくささに関してはどこでも触れてないという。
+
+### 設定
+
+```{r blogdown_option}
+
+options(blogdown.rmd = TRUE)
+
+```
+
+たぶん、うまく行かないと思うぞ。  
+気にせず行こうww。
+
+### new_post
+
+記事を書く部分にはいるぞ、まあうまくいかんでしょ。
+
+```{r post}
+
+blogdown::new_post("title")
+
+```
+
+これで、"content/post/"のなかにディレクトリが作られてるはず。おそらく、中身はmdファイルじゃなかろうか。  
+これを、rmdファイルに直して保存しなおしてね。(私は、名前変えるスクリプトつくりました。)
+
+### rmdからmdにする。
+
+ぶっちゃけ、**knitr**使えばいい。
+
+```{r knitr}
+
+knitr::knit("path/to/index.Rmd", "path/to/index.md")
+
+```
+
+これで、記事書くところまでおわった。
+
+---
+
+あとは、サイトたちあげるところね。  
+すっかり忘れてたわ。
+
+まあまあ、めんどくさいけど、楽しいね。文章書くの。
+

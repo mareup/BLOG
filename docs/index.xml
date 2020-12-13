@@ -6,7 +6,63 @@
         <description>Recent content on R日夜</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>blogdownはじめました。2</title>
+        <link>/p/blogdown-2/</link>
+        <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>/p/blogdown-2/</guid>
+        <description>
+&lt;link href=&#34;./p/blogdown-2/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;./p/blogdown-2/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;themeを選ぶ&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;themeを選ぶ&lt;/h2&gt;
+&lt;p&gt;blogdownをはじめたら、次はthemeをえらぶ。&lt;br /&gt;
+あんまり説明されてないけど、hugoのthemeがblogdownに対応しているかというとそうでもなくて、だいたい運が悪いとここで詰みます。&lt;br /&gt;
+簡単にすませるとしたら、先人がつかってるthemeをそのまま使うといい。&lt;br /&gt;
+ちなみに、このblogのthemeは&lt;strong&gt;stack&lt;/strong&gt;を使っているけど、blogdownに完全に対応してるわけじゃないので少し使い勝手がわるい。 たぶん、そのうち、hugo単体に切り替えていくと思う。そのほうがいいし、rmarkdownも普通に使えるからね。(工夫が必要になるけど)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themeを選ぶ場合はこちら&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# このサイトのtheme
+blogdown::install_theme(&amp;quot;CaiJimmy/hugo-theme-stack&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;configをいじる&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;configをいじる&lt;/h2&gt;
+&lt;p&gt;次は、config.tomlをいじる必要がある。&lt;/p&gt;
+&lt;p&gt;config.tomlに関しては、他のサイトを見てもらったほうがいいと思う。&lt;br /&gt;
+というのも、このサイトで使ってるthemeは&lt;em&gt;config.yaml&lt;/em&gt;だし、記述方法が違う。githubを参照してもらってもいいけど、あまり面倒なことをしたくないなら、他のサイトを参考にしたほうが圧倒的に良い。&lt;/p&gt;
+&lt;div id=&#34;最低限いじった方がいいもの&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;最低限いじった方がいいもの&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;baseurl&lt;/li&gt;
+&lt;li&gt;languageCode&lt;/li&gt;
+&lt;li&gt;title&lt;/li&gt;
+&lt;li&gt;author&lt;/li&gt;
+&lt;li&gt;DefaultcontentLanguage&lt;/li&gt;
+&lt;li&gt;publishDir&lt;/li&gt;
+&lt;li&gt;ignoreFiles&lt;/li&gt;
+&lt;li&gt;relativeurls&lt;/li&gt;
+&lt;li&gt;hasCJKLanguage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;netlify.tomlをいじる&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;netlify.tomlをいじる&lt;/h2&gt;
+&lt;p&gt;これは、必要なのかしらんけど、netlify考えてる人はいじろう。&lt;/p&gt;
+&lt;pre class=&#34;toml&#34;&gt;&lt;code&gt;
+publish = &amp;quot;docs&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;blogdownのめんどくさいところは、これで全部だと思う。&lt;br /&gt;
+あとは、まあうまくやってくれとしか言いようがない。&lt;/p&gt;
+&lt;p&gt;どうであれ、楽して記事をかけるのは悦びだと思うぞ。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>blogdownはじめてみた。1</title>
         <link>/p/20201212/</link>
         <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
@@ -20,7 +76,9 @@
 &lt;div id=&#34;blogdownについて&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;blogdownについて&lt;/h1&gt;
 &lt;p&gt;そうたいした内容ではないですが、このブログも&lt;strong&gt;blogdown&lt;/strong&gt;を使っているので、軽く説明してみようかなと。&lt;/p&gt;
-&lt;p&gt;まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。 ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。 go言語で作られてる。&lt;/p&gt;
+&lt;p&gt;まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。&lt;br /&gt;
+ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。&lt;br /&gt;
+go言語で作られてる。&lt;/p&gt;
 &lt;div id=&#34;install&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;install&lt;/h2&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;remotes::install_github(&amp;quot;rstudio/blogdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
@@ -28,9 +86,12 @@
 &lt;p&gt;hugoも入れるんだぜい。&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::install_hugo()&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;ここまですすめたら、スタート地点にたったも同じ。&lt;/p&gt;
-&lt;p&gt;この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。 すごいめんどいから、おすすめしない。 たぶん、vagrantだとこの時点で詰む。&lt;/p&gt;
+&lt;p&gt;この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。&lt;br /&gt;
+すごいめんどいから、おすすめしない。&lt;br /&gt;
+たぶん、vagrantだとこの時点で詰む。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;今日はここらへんで。 こんな感じでゆるくやってくので。&lt;/p&gt;
+&lt;p&gt;今日はここらへんで。&lt;br /&gt;
+こんな感じでゆるくやってくので。&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>

@@ -6,7 +6,16 @@
     <description>Recent content in R on R日夜</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blogdownはじめました。2</title>
+      <link>/p/blogdown-2/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/p/blogdown-2/</guid>
+      <description>themeを選ぶ blogdownをはじめたら、次はthemeをえらぶ。 あんまり説明されてないけど、hugoのthemeがblogdownに対</description>
+    </item>
+    
     <item>
       <title>blogdownはじめてみた。1</title>
       <link>/p/20201212/</link>
