@@ -6,7 +6,47 @@
         <description>Recent content on R日夜</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>blogdownはじめました。3</title>
+        <link>/p/blogdown-3/</link>
+        <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>/p/blogdown-3/</guid>
+        <description>
+&lt;link href=&#34;./p/blogdown-3/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;./p/blogdown-3/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;記事を書く&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;記事を書く&lt;/h2&gt;
+&lt;p&gt;いやあ、記事を書くのが、まためんどい。いや、めんどいっていうか、たぶん普通の設定ならうまくいくんだろうな。けど、うまくいかないからめんどいし、このめんどくささに関してはどこでも触れてないという。&lt;/p&gt;
+&lt;div id=&#34;設定&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;設定&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;options(blogdown.rmd = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;たぶん、うまく行かないと思うぞ。&lt;br /&gt;
+気にせず行こうww。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;new_post&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;new_post&lt;/h3&gt;
+&lt;p&gt;記事を書く部分にはいるぞ、まあうまくいかんでしょ。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::new_post(&amp;quot;title&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これで、“content/post/”のなかにディレクトリが作られてるはず。おそらく、中身はmdファイルじゃなかろうか。&lt;br /&gt;
+これを、rmdファイルに直して保存しなおしてね。(私は、名前変えるスクリプトつくりました。)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;rmdからmdにする&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;rmdからmdにする。&lt;/h3&gt;
+&lt;p&gt;ぶっちゃけ、&lt;strong&gt;knitr&lt;/strong&gt;使えばいい。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::knit(&amp;quot;path/to/index.Rmd&amp;quot;, &amp;quot;path/to/index.md&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これで、記事書くところまでおわった。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;あとは、サイトたちあげるところね。&lt;br /&gt;
+すっかり忘れてたわ。&lt;/p&gt;
+&lt;p&gt;まあまあ、めんどくさいけど、楽しいね。文章書くの。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>blogdownはじめました。2</title>
         <link>/p/blogdown-2/</link>
         <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>

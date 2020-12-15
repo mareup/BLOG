@@ -31,14 +31,17 @@ rmd_to_md <- function(filedir = NULL, set_path = TRUE) {
     
     if(set_path) {
         path <- "~/work/share/BLOG/content/post/"
+        
+        knitr::knit(paste0(path, filedir, "/index.Rmd"), paste0(path, filedir, "/index.md"))
     } else {
-        if(!(is.character(pathname))) {
+        if(!(is.character(filedir))) {
             stop()
         }
         
-        path <- pathname
+        path <- filedir
+        
+        knitr::knit(paste0(path, "/index.Rmd"), paste0(path, "/index.md"))
     }
     
-    knitr::knit(paste0(path, filedir, "/index.Rmd"), paste0(path, filedir, "/index.md"))
     
 }

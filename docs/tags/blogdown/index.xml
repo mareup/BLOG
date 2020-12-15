@@ -6,7 +6,16 @@
     <description>Recent content in blogdown on R日夜</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blogdownはじめました。3</title>
+      <link>/p/blogdown-3/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/p/blogdown-3/</guid>
+      <description>記事を書く いやあ、記事を書くのが、まためんどい。いや、めんどいっていうか、たぶん普通の設定ならうまくいくんだろうな。けど、うまくいかないから</description>
+    </item>
+    
     <item>
       <title>blogdownはじめました。2</title>
       <link>/p/blogdown-2/</link>

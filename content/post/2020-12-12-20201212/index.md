@@ -1,5 +1,5 @@
 ---
-title: 'blogdownはじめてみた。1'
+title: 'blogdownはじめました。1'
 author: ~
 date: '2020-12-12'
 slug: '20201212'
