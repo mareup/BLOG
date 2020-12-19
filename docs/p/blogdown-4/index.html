@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='themeを選ぶ blogdownをはじめたら、次はthemeをえらぶ。 あんまり説明されてないけど、hugoのthemeがblogdownに対'><title>blogdownはじめました。2</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='記事を公開する いやー、ここまでくるまで長かった。こっからも長いのよ。 # blogを見てみる serve_site() # blogを見てみるのをやめる。 stop_server() これで、うまくい'><title>blogdownはじめました。4</title>
 
-<link rel='canonical' href='../../p/blogdown-2/'>
+<link rel='canonical' href='../../p/blogdown-4/'>
 
-<link rel="stylesheet" href="../../scss/style.min.css"><meta property='og:title' content='blogdownはじめました。2'>
-<meta property='og:description' content='themeを選ぶ blogdownをはじめたら、次はthemeをえらぶ。 あんまり説明されてないけど、hugoのthemeがblogdownに対'>
-<meta property='og:url' content='/p/blogdown-2/'>
+<link rel="stylesheet" href="../../scss/style.min.css"><meta property='og:title' content='blogdownはじめました。4'>
+<meta property='og:description' content='記事を公開する いやー、ここまでくるまで長かった。こっからも長いのよ。 # blogを見てみる serve_site() # blogを見てみるのをやめる。 stop_server() これで、うまくい'>
+<meta property='og:url' content='/p/blogdown-4/'>
 <meta property='og:site_name' content='R日夜'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='R' /><meta property='article:tag' content='blogdown' /><meta property='article:published_time' content='2020-12-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-12-13T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="blogdownはじめました。2">
-<meta name="twitter:description" content="themeを選ぶ blogdownをはじめたら、次はthemeをえらぶ。 あんまり説明されてないけど、hugoのthemeがblogdownに対">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='R' /><meta property='article:tag' content='blogdown' /><meta property='article:published_time' content='2020-12-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-12-17T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="blogdownはじめました。4">
+<meta name="twitter:description" content="記事を公開する いやー、ここまでくるまで長かった。こっからも長いのよ。 # blogを見てみる serve_site() # blogを見てみるのをやめる。 stop_server() これで、うまくい">
     </head>
     <body class="">
         <div class="container flex on-phone--column align-items--flex-start extended article-page with-toolbar">
@@ -151,7 +151,7 @@
     
 
     <h2 class="article-title">
-        <a href="../../p/blogdown-2/">blogdownはじめました。2</a>
+        <a href="../../p/blogdown-4/">blogdownはじめました。4</a>
     </h2>
 
     <footer class="article-time">
@@ -163,47 +163,37 @@
 
 
 
-        <time class="article-time--published">Dec 13, 2020</time>
+        <time class="article-time--published">Dec 17, 2020</time>
     </footer></div>
 </header>
 
     <section class="article-content">
-    <h2 id="themeを選ぶ">themeを選ぶ</h2>
-<p>blogdownをはじめたら、次はthemeをえらぶ。<br>
-あんまり説明されてないけど、hugoのthemeがblogdownに対応しているかというとそうでもなくて、だいたい運が悪いとここで詰みます。<br>
-簡単にすませるとしたら、先人がつかってるthemeをそのまま使うといい。<br>
-ちなみに、このblogのthemeは<strong>stack</strong>を使っているけど、blogdownに完全に対応してるわけじゃないので少し使い勝手がわるい。
-たぶん、そのうち、hugo単体に切り替えていくと思う。そのほうがいいし、rmarkdownも普通に使えるからね。(工夫が必要になるけど)</p>
-<ul>
-<li><a class="link" href="theme%e3%82%92%e9%81%b8%e3%81%b6%e5%a0%b4%e5%90%88%e3%81%af%e3%81%93%e3%81%a1%e3%82%89" >https://themes.gohugo.io/</a></li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="c1"># このサイトのtheme</span>
-<span class="n">blogdown</span><span class="o">::</span><span class="nf">install_theme</span><span class="p">(</span><span class="s">&#34;CaiJimmy/hugo-theme-stack&#34;</span><span class="p">)</span>
-</code></pre></div><h2 id="configをいじる">configをいじる</h2>
-<p>次は、config.tomlをいじる必要がある。</p>
-<p>config.tomlに関しては、他のサイトを見てもらったほうがいいと思う。<br>
-というのも、このサイトで使ってるthemeは<em>config.yaml</em>だし、記述方法が違う。githubを参照してもらってもいいけど、あまり面倒なことをしたくないなら、他のサイトを参考にしたほうが圧倒的に良い。</p>
-<h3 id="最低限いじった方がいいもの">最低限いじった方がいいもの</h3>
-<ul>
-<li>baseurl</li>
-<li>languageCode</li>
-<li>title</li>
-<li>author</li>
-<li>DefaultcontentLanguage</li>
-<li>publishDir</li>
-<li>ignoreFiles</li>
-<li>relativeurls</li>
-<li>hasCJKLanguage</li>
-</ul>
-<h2 id="netlifytomlをいじる">netlify.tomlをいじる</h2>
-<p>これは、必要なのかしらんけど、netlify考えてる人はいじろう。</p>
-<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml">
-<span class="nx">publish</span> <span class="p">=</span> <span class="s2">&#34;docs&#34;</span>
+    <h2 id="記事を公開する">記事を公開する</h2>
+<p>いやー、ここまでくるまで長かった。こっからも長いのよ。</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="c1"># blogを見てみる</span>
+<span class="nf">serve_site</span><span class="p">()</span>
 
-</code></pre></div><hr>
-<p>blogdownのめんどくさいところは、これで全部だと思う。<br>
-あとは、まあうまくやってくれとしか言いようがない。</p>
-<p>どうであれ、楽して記事をかけるのは悦びだと思うぞ。</p>
+<span class="c1"># blogを見てみるのをやめる。</span>
+<span class="nf">stop_server</span><span class="p">()</span>
+</code></pre></div><p>これで、うまくいくんだけどさあ、、、ほんとは、、、<br>
+残念な話、rmdつかっちゃうとknitする前だと、勝手にhtmlをレンダリングしちゃうわけで、そうなるとなぜかcssがうまくよみこまれないのよ。
+<del>これ、だれも話してないの。わかるわけなくない？</del> ← どーも、serve_site使いながらRmdの編集をするとだめっぽいな。</p>
+<p>とりあえず、ここまでは良しとしよう。(暴論)</p>
+<h2 id="記事をビルドする">記事をビルドする。</h2>
+<p>さっきのは、試しに見てみる的なやつ。
+今度のは、ちゃんとブログをつくるやつ。</p>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="nf">build_site</span><span class="p">()</span>
+</code></pre></div><p>これで、一通りOKね。</p>
+<p>あとは、githubうんぬんは、個人でやってくれ。説明したいけど、これ、netlifyやし、gh-pagesちゃうし。</p>
+<h2 id="おまけ">おまけ</h2>
+<ul>
+<li>なんか、気づいたんだけど、rstudio server のアップデートにより、タブやwindowの挙動が変わった模様。</li>
+<li>あと、毎回、setupチャンク書くのめんどい。</li>
+<li>わいの<a class="link" href="https://github.com/mareup/BLOG"  target="_blank" rel="noopener"
+    >github</a>の方に、setup.Rってあるんだけど、これの<code>change_name()</code>と<code>rmd_to_md()</code>って関数をパス読み替えて使えば便利やで。</li>
+</ul>
+<hr>
+<p>わからんかったら、twitterで絡んで。DMもあいてるんでどぞ。</p>
 
 </section>
 
@@ -245,24 +235,24 @@
                 
                     
 <article class="">
-    <a href="../../p/blogdown-4/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">blogdownはじめました。4</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
     <a href="../../p/blogdown-3/">
         
         
 
         <div class="article-details">
             <h2 class="article-title">blogdownはじめました。3</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="../../p/blogdown-2/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">blogdownはじめました。2</h2>
         </div>
     </a>
 </article>

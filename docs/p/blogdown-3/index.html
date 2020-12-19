@@ -168,38 +168,25 @@
 </header>
 
     <section class="article-content">
-    
-<link href="../../p/blogdown-3/index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="../../p/blogdown-3/index_files/anchor-sections/anchor-sections.js"></script>
-
-
-<div id="記事を書く" class="section level2">
-<h2>記事を書く</h2>
+    <h2 id="記事を書く">記事を書く</h2>
 <p>いやあ、記事を書くのが、まためんどい。いや、めんどいっていうか、たぶん普通の設定ならうまくいくんだろうな。けど、うまくいかないからめんどいし、このめんどくささに関してはどこでも触れてないという。</p>
-<div id="設定" class="section level3">
-<h3>設定</h3>
-<pre class="r"><code>options(blogdown.rmd = TRUE)</code></pre>
-<p>たぶん、うまく行かないと思うぞ。<br />
+<h3 id="設定">設定</h3>
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="nf">options</span><span class="p">(</span><span class="n">blogdown.rmd</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+</code></pre></div><p>たぶん、うまく行かないと思うぞ。<br>
 気にせず行こうww。</p>
-</div>
-<div id="new_post" class="section level3">
-<h3>new_post</h3>
+<h3 id="new_post">new_post</h3>
 <p>記事を書く部分にはいるぞ、まあうまくいかんでしょ。</p>
-<pre class="r"><code>blogdown::new_post(&quot;title&quot;)</code></pre>
-<p>これで、“content/post/”のなかにディレクトリが作られてるはず。おそらく、中身はmdファイルじゃなかろうか。<br />
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">blogdown</span><span class="o">::</span><span class="nf">new_post</span><span class="p">(</span><span class="s">&#34;title&#34;</span><span class="p">)</span>
+</code></pre></div><p>これで、&ldquo;content/post/&ldquo;のなかにディレクトリが作られてるはず。おそらく、中身はmdファイルじゃなかろうか。<br>
 これを、rmdファイルに直して保存しなおしてね。(私は、名前変えるスクリプトつくりました。)</p>
-</div>
-<div id="rmdからmdにする" class="section level3">
-<h3>rmdからmdにする。</h3>
+<h3 id="rmdからmdにする">rmdからmdにする。</h3>
 <p>ぶっちゃけ、<strong>knitr</strong>使えばいい。</p>
-<pre class="r"><code>knitr::knit(&quot;path/to/index.Rmd&quot;, &quot;path/to/index.md&quot;)</code></pre>
-<p>これで、記事書くところまでおわった。</p>
-<hr />
-<p>あとは、サイトたちあげるところね。<br />
+<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">knitr</span><span class="o">::</span><span class="nf">knit</span><span class="p">(</span><span class="s">&#34;path/to/index.Rmd&#34;</span><span class="p">,</span> <span class="s">&#34;path/to/index.md&#34;</span><span class="p">)</span>
+</code></pre></div><p>これで、記事書くところまでおわった。</p>
+<hr>
+<p>あとは、サイトたちあげるところね。<br>
 すっかり忘れてたわ。</p>
 <p>まあまあ、めんどくさいけど、楽しいね。文章書くの。</p>
-</div>
-</div>
 
 </section>
 
@@ -241,6 +228,18 @@
                 
                     
 <article class="">
+    <a href="../../p/blogdown-4/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">blogdownはじめました。4</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
     <a href="../../p/blogdown-2/">
         
         
@@ -258,7 +257,7 @@
         
 
         <div class="article-details">
-            <h2 class="article-title">blogdownはじめてみた。1</h2>
+            <h2 class="article-title">blogdownはじめました。1</h2>
         </div>
     </a>
 </article>

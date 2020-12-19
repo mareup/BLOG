@@ -10,16 +10,22 @@ change_name <- function(filedir = NULL, set_path = T, pathname = NULL, knitr = T
     
     if(set_path) {
         path <- "~/work/share/BLOG/content/post/"
+        path <- paste0(path, filedir)
+        
     } else {
-        if(!(is.character(pathname))) {
+        # if(!(is.character(pathname))) {
+        #     stop()
+        # }
+        
+        if(!(is.character(filedir))) {
             stop()
         }
         
-        path <- pathname
+        path <- filedir
     }
     
-    command <- paste0("mv ", path, filedir, "/index.md ",
-                             path, filedir, "/index.Rmd")
+    command <- paste0("mv ", path, "/index.md ",
+                             path, "/index.Rmd")
     
     system(command)
 }
@@ -31,8 +37,8 @@ rmd_to_md <- function(filedir = NULL, set_path = TRUE) {
     
     if(set_path) {
         path <- "~/work/share/BLOG/content/post/"
+        path <- paste0(path, filedir)
         
-        knitr::knit(paste0(path, filedir, "/index.Rmd"), paste0(path, filedir, "/index.md"))
     } else {
         if(!(is.character(filedir))) {
             stop()
@@ -40,8 +46,8 @@ rmd_to_md <- function(filedir = NULL, set_path = TRUE) {
         
         path <- filedir
         
-        knitr::knit(paste0(path, "/index.Rmd"), paste0(path, "/index.md"))
     }
     
+    knitr::knit(paste0(path, "/index.Rmd"), paste0(path, "/index.md"))
     
 }

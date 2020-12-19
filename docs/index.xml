@@ -6,44 +6,65 @@
         <description>Recent content on R日夜</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>blogdownはじめました。4</title>
+        <link>/p/blogdown-4/</link>
+        <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>/p/blogdown-4/</guid>
+        <description>&lt;h2 id=&#34;記事を公開する&#34;&gt;記事を公開する&lt;/h2&gt;
+&lt;p&gt;いやー、ここまでくるまで長かった。こっからも長いのよ。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# blogを見てみる&lt;/span&gt;
+&lt;span class=&#34;nf&#34;&gt;serve_site&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+
+&lt;span class=&#34;c1&#34;&gt;# blogを見てみるのをやめる。&lt;/span&gt;
+&lt;span class=&#34;nf&#34;&gt;stop_server&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これで、うまくいくんだけどさあ、、、ほんとは、、、&lt;br&gt;
+残念な話、rmdつかっちゃうとknitする前だと、勝手にhtmlをレンダリングしちゃうわけで、そうなるとなぜかcssがうまくよみこまれないのよ。
+&lt;del&gt;これ、だれも話してないの。わかるわけなくない？&lt;/del&gt; ← どーも、serve_site使いながらRmdの編集をするとだめっぽいな。&lt;/p&gt;
+&lt;p&gt;とりあえず、ここまでは良しとしよう。(暴論)&lt;/p&gt;
+&lt;h2 id=&#34;記事をビルドする&#34;&gt;記事をビルドする。&lt;/h2&gt;
+&lt;p&gt;さっきのは、試しに見てみる的なやつ。
+今度のは、ちゃんとブログをつくるやつ。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;nf&#34;&gt;build_site&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これで、一通りOKね。&lt;/p&gt;
+&lt;p&gt;あとは、githubうんぬんは、個人でやってくれ。説明したいけど、これ、netlifyやし、gh-pagesちゃうし。&lt;/p&gt;
+&lt;h2 id=&#34;おまけ&#34;&gt;おまけ&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;なんか、気づいたんだけど、rstudio server のアップデートにより、タブやwindowの挙動が変わった模様。&lt;/li&gt;
+&lt;li&gt;あと、毎回、setupチャンク書くのめんどい。&lt;/li&gt;
+&lt;li&gt;わいの&lt;a class=&#34;link&#34; href=&#34;https://github.com/mareup/BLOG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;github&lt;/a&gt;の方に、setup.Rってあるんだけど、これの&lt;code&gt;change_name()&lt;/code&gt;と&lt;code&gt;rmd_to_md()&lt;/code&gt;って関数をパス読み替えて使えば便利やで。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;わからんかったら、twitterで絡んで。DMもあいてるんでどぞ。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>blogdownはじめました。3</title>
         <link>/p/blogdown-3/</link>
         <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
         
         <guid>/p/blogdown-3/</guid>
-        <description>
-&lt;link href=&#34;./p/blogdown-3/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;./p/blogdown-3/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div id=&#34;記事を書く&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;記事を書く&lt;/h2&gt;
+        <description>&lt;h2 id=&#34;記事を書く&#34;&gt;記事を書く&lt;/h2&gt;
 &lt;p&gt;いやあ、記事を書くのが、まためんどい。いや、めんどいっていうか、たぶん普通の設定ならうまくいくんだろうな。けど、うまくいかないからめんどいし、このめんどくささに関してはどこでも触れてないという。&lt;/p&gt;
-&lt;div id=&#34;設定&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;設定&lt;/h3&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;options(blogdown.rmd = TRUE)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;たぶん、うまく行かないと思うぞ。&lt;br /&gt;
+&lt;h3 id=&#34;設定&#34;&gt;設定&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;nf&#34;&gt;options&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;blogdown.rmd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;TRUE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;たぶん、うまく行かないと思うぞ。&lt;br&gt;
 気にせず行こうww。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;new_post&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;new_post&lt;/h3&gt;
+&lt;h3 id=&#34;new_post&#34;&gt;new_post&lt;/h3&gt;
 &lt;p&gt;記事を書く部分にはいるぞ、まあうまくいかんでしょ。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::new_post(&amp;quot;title&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;これで、“content/post/”のなかにディレクトリが作られてるはず。おそらく、中身はmdファイルじゃなかろうか。&lt;br /&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;n&#34;&gt;blogdown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;new_post&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これで、&amp;ldquo;content/post/&amp;ldquo;のなかにディレクトリが作られてるはず。おそらく、中身はmdファイルじゃなかろうか。&lt;br&gt;
 これを、rmdファイルに直して保存しなおしてね。(私は、名前変えるスクリプトつくりました。)&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;rmdからmdにする&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;rmdからmdにする。&lt;/h3&gt;
+&lt;h3 id=&#34;rmdからmdにする&#34;&gt;rmdからmdにする。&lt;/h3&gt;
 &lt;p&gt;ぶっちゃけ、&lt;strong&gt;knitr&lt;/strong&gt;使えばいい。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::knit(&amp;quot;path/to/index.Rmd&amp;quot;, &amp;quot;path/to/index.md&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;これで、記事書くところまでおわった。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;あとは、サイトたちあげるところね。&lt;br /&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;n&#34;&gt;knitr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;knit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;path/to/index.Rmd&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;path/to/index.md&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これで、記事書くところまでおわった。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;あとは、サイトたちあげるところね。&lt;br&gt;
 すっかり忘れてたわ。&lt;/p&gt;
 &lt;p&gt;まあまあ、めんどくさいけど、楽しいね。文章書くの。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
         </item>
         <item>
@@ -52,30 +73,22 @@
         <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
         
         <guid>/p/blogdown-2/</guid>
-        <description>
-&lt;link href=&#34;./p/blogdown-2/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;./p/blogdown-2/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div id=&#34;themeを選ぶ&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;themeを選ぶ&lt;/h2&gt;
-&lt;p&gt;blogdownをはじめたら、次はthemeをえらぶ。&lt;br /&gt;
-あんまり説明されてないけど、hugoのthemeがblogdownに対応しているかというとそうでもなくて、だいたい運が悪いとここで詰みます。&lt;br /&gt;
-簡単にすませるとしたら、先人がつかってるthemeをそのまま使うといい。&lt;br /&gt;
-ちなみに、このblogのthemeは&lt;strong&gt;stack&lt;/strong&gt;を使っているけど、blogdownに完全に対応してるわけじゃないので少し使い勝手がわるい。 たぶん、そのうち、hugo単体に切り替えていくと思う。そのほうがいいし、rmarkdownも普通に使えるからね。(工夫が必要になるけど)&lt;/p&gt;
+        <description>&lt;h2 id=&#34;themeを選ぶ&#34;&gt;themeを選ぶ&lt;/h2&gt;
+&lt;p&gt;blogdownをはじめたら、次はthemeをえらぶ。&lt;br&gt;
+あんまり説明されてないけど、hugoのthemeがblogdownに対応しているかというとそうでもなくて、だいたい運が悪いとここで詰みます。&lt;br&gt;
+簡単にすませるとしたら、先人がつかってるthemeをそのまま使うといい。&lt;br&gt;
+ちなみに、このblogのthemeは&lt;strong&gt;stack&lt;/strong&gt;を使っているけど、blogdownに完全に対応してるわけじゃないので少し使い勝手がわるい。
+たぶん、そのうち、hugo単体に切り替えていくと思う。そのほうがいいし、rmarkdownも普通に使えるからね。(工夫が必要になるけど)&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themeを選ぶ場合はこちら&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;theme%e3%82%92%e9%81%b8%e3%81%b6%e5%a0%b4%e5%90%88%e3%81%af%e3%81%93%e3%81%a1%e3%82%89&#34; &gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# このサイトのtheme
-blogdown::install_theme(&amp;quot;CaiJimmy/hugo-theme-stack&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;configをいじる&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;configをいじる&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# このサイトのtheme&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;blogdown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;install_theme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;CaiJimmy/hugo-theme-stack&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;configをいじる&#34;&gt;configをいじる&lt;/h2&gt;
 &lt;p&gt;次は、config.tomlをいじる必要がある。&lt;/p&gt;
-&lt;p&gt;config.tomlに関しては、他のサイトを見てもらったほうがいいと思う。&lt;br /&gt;
+&lt;p&gt;config.tomlに関しては、他のサイトを見てもらったほうがいいと思う。&lt;br&gt;
 というのも、このサイトで使ってるthemeは&lt;em&gt;config.yaml&lt;/em&gt;だし、記述方法が違う。githubを参照してもらってもいいけど、あまり面倒なことをしたくないなら、他のサイトを参考にしたほうが圧倒的に良い。&lt;/p&gt;
-&lt;div id=&#34;最低限いじった方がいいもの&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;最低限いじった方がいいもの&lt;/h3&gt;
+&lt;h3 id=&#34;最低限いじった方がいいもの&#34;&gt;最低限いじった方がいいもの&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;baseurl&lt;/li&gt;
 &lt;li&gt;languageCode&lt;/li&gt;
@@ -87,53 +100,40 @@ blogdown::install_theme(&amp;quot;CaiJimmy/hugo-theme-stack&amp;quot;)&lt;/code&
 &lt;li&gt;relativeurls&lt;/li&gt;
 &lt;li&gt;hasCJKLanguage&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;netlify.tomlをいじる&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;netlify.tomlをいじる&lt;/h2&gt;
+&lt;h2 id=&#34;netlifytomlをいじる&#34;&gt;netlify.tomlをいじる&lt;/h2&gt;
 &lt;p&gt;これは、必要なのかしらんけど、netlify考えてる人はいじろう。&lt;/p&gt;
-&lt;pre class=&#34;toml&#34;&gt;&lt;code&gt;
-publish = &amp;quot;docs&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
-&lt;p&gt;blogdownのめんどくさいところは、これで全部だと思う。&lt;br /&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;
+&lt;span class=&#34;nx&#34;&gt;publish&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;docs&amp;#34;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;blogdownのめんどくさいところは、これで全部だと思う。&lt;br&gt;
 あとは、まあうまくやってくれとしか言いようがない。&lt;/p&gt;
 &lt;p&gt;どうであれ、楽して記事をかけるのは悦びだと思うぞ。&lt;/p&gt;
-&lt;/div&gt;
 </description>
         </item>
         <item>
-        <title>blogdownはじめてみた。1</title>
+        <title>blogdownはじめました。1</title>
         <link>/p/20201212/</link>
         <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
         
         <guid>/p/20201212/</guid>
-        <description>
-&lt;link href=&#34;./p/20201212/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;./p/20201212/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div id=&#34;blogdownについて&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;blogdownについて&lt;/h1&gt;
+        <description>&lt;h1 id=&#34;blogdownについて&#34;&gt;blogdownについて&lt;/h1&gt;
 &lt;p&gt;そうたいした内容ではないですが、このブログも&lt;strong&gt;blogdown&lt;/strong&gt;を使っているので、軽く説明してみようかなと。&lt;/p&gt;
-&lt;p&gt;まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。&lt;br /&gt;
-ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。&lt;br /&gt;
+&lt;p&gt;まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。&lt;br&gt;
+ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。&lt;br&gt;
 go言語で作られてる。&lt;/p&gt;
-&lt;div id=&#34;install&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;install&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;remotes::install_github(&amp;quot;rstudio/blogdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;hr /&gt;
+&lt;h2 id=&#34;install&#34;&gt;install&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;n&#34;&gt;remotes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;install_github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;rstudio/blogdown&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
 &lt;p&gt;hugoも入れるんだぜい。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::install_hugo()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;ここまですすめたら、スタート地点にたったも同じ。&lt;/p&gt;
-&lt;p&gt;この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。&lt;br /&gt;
-すごいめんどいから、おすすめしない。&lt;br /&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;n&#34;&gt;blogdown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;install_hugo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ここまですすめたら、スタート地点にたったも同じ。&lt;/p&gt;
+&lt;p&gt;この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。&lt;br&gt;
+すごいめんどいから、おすすめしない。&lt;br&gt;
 たぶん、vagrantだとこの時点で詰む。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;今日はここらへんで。&lt;br /&gt;
+&lt;hr&gt;
+&lt;p&gt;今日はここらへんで。&lt;br&gt;
 こんな感じでゆるくやってくので。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
         </item>
         <item>
@@ -142,20 +142,13 @@ go言語で作られてる。&lt;/p&gt;
         <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
         
         <guid>/p/20201211/</guid>
-        <description>
-&lt;link href=&#34;./p/20201211/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;./p/20201211/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
-
-
-&lt;div id=&#34;はじめに&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;はじめに&lt;/h1&gt;
-&lt;p&gt;これから、このブログをつかっていろいろ書いてみることにしてる。 なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。&lt;/p&gt;
+        <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+&lt;p&gt;これから、このブログをつかっていろいろ書いてみることにしてる。
+なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。&lt;/p&gt;
 &lt;p&gt;このブログは、個人の意見をもとにRとかその他諸々を書いていく。&lt;/p&gt;
-&lt;div id=&#34;読み方&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;読み方&lt;/h2&gt;
-&lt;p&gt;雑記のタグのものは、内容無いので飛ばしてくれて構わない。 あとは、タグどおりにいろいろ書く予定。まえに書いてたブログの分もそのうち移行するのでお楽しみに。&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;h2 id=&#34;読み方&#34;&gt;読み方&lt;/h2&gt;
+&lt;p&gt;雑記のタグのものは、内容無いので飛ばしてくれて構わない。
+あとは、タグどおりにいろいろ書く予定。まえに書いてたブログの分もそのうち移行するのでお楽しみに。&lt;/p&gt;
 </description>
         </item>
         

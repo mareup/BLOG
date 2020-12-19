@@ -6,7 +6,16 @@
     <description>Recent content in R on R日夜</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blogdownはじめました。4</title>
+      <link>/p/blogdown-4/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/p/blogdown-4/</guid>
+      <description>記事を公開する いやー、ここまでくるまで長かった。こっからも長いのよ。 # blogを見てみる serve_site() # blogを見てみるのをやめる。 stop_server() これで、うまくい</description>
+    </item>
+    
     <item>
       <title>blogdownはじめました。3</title>
       <link>/p/blogdown-3/</link>
@@ -26,7 +35,7 @@
     </item>
     
     <item>
-      <title>blogdownはじめてみた。1</title>
+      <title>blogdownはじめました。1</title>
       <link>/p/20201212/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
       
