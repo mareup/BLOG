@@ -168,23 +168,32 @@
 </header>
 
     <section class="article-content">
-    <h1 id="blogdownについて">blogdownについて</h1>
+    
+<link href="../../p/20201212/index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="../../p/20201212/index_files/anchor-sections/anchor-sections.js"></script>
+
+
+<div id="blogdownについて" class="section level1">
+<h1>blogdownについて</h1>
 <p>そうたいした内容ではないですが、このブログも<strong>blogdown</strong>を使っているので、軽く説明してみようかなと。</p>
-<p>まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。<br>
-ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。<br>
+<p>まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。<br />
+ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。<br />
 go言語で作られてる。</p>
-<h2 id="install">install</h2>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">remotes</span><span class="o">::</span><span class="nf">install_github</span><span class="p">(</span><span class="s">&#34;rstudio/blogdown&#34;</span><span class="p">)</span>
-</code></pre></div><hr>
+<div id="install" class="section level2">
+<h2>install</h2>
+<pre class="r"><code>remotes::install_github(&quot;rstudio/blogdown&quot;)</code></pre>
+<hr />
 <p>hugoも入れるんだぜい。</p>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="n">blogdown</span><span class="o">::</span><span class="nf">install_hugo</span><span class="p">()</span>
-</code></pre></div><p>ここまですすめたら、スタート地点にたったも同じ。</p>
-<p>この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。<br>
-すごいめんどいから、おすすめしない。<br>
+<pre class="r"><code>blogdown::install_hugo()</code></pre>
+<p>ここまですすめたら、スタート地点にたったも同じ。</p>
+<p>この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。<br />
+すごいめんどいから、おすすめしない。<br />
 たぶん、vagrantだとこの時点で詰む。</p>
-<hr>
-<p>今日はここらへんで。<br>
+<hr />
+<p>今日はここらへんで。<br />
 こんな感じでゆるくやってくので。</p>
+</div>
+</div>
 
 </section>
 

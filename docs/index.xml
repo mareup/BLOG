@@ -6,7 +6,39 @@
         <description>Recent content on R日夜</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>pythonの環境構築</title>
+        <link>/p/python-environment/</link>
+        <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>/p/python-environment/</guid>
+        <description>&lt;h2 id=&#34;pythonの環境構築&#34;&gt;pythonの環境構築&lt;/h2&gt;
+&lt;p&gt;なんか、最近、pythonでいろいろやることへったので、スルーしてる間にどうにも状況が変わったらしい。。。&lt;/p&gt;
+&lt;p&gt;昔から、pythonの環境構築はめんどいもので、構築するだけで1日かかることもあった。いや、今でもめんどくさいんだけど。&lt;br&gt;
+それでも、一応、R勢でpythonの盛り上がりがあるのは知ってるので、ちょっと触れてみようかと。&lt;/p&gt;
+&lt;h2 id=&#34;以下どうでもいい内容&#34;&gt;以下どうでもいい内容。&lt;/h2&gt;
+&lt;p&gt;前は、&lt;em&gt;anaconda&lt;/em&gt;で環境構築してたんだけど、これがやたら重いため、pyenvに切り替えて使ってた。
+今は、&lt;em&gt;sphinx&lt;/em&gt;を主に使ってるので、スクリプト作ったりということは減った。
+&lt;em&gt;django&lt;/em&gt;も面白かったけど、&lt;em&gt;shiny&lt;/em&gt;のほうが使い勝手いいと思う。&lt;/p&gt;
+&lt;p&gt;だけど、&lt;em&gt;pyenv&lt;/em&gt;いいぞとは、まだなっていないんですね〜。(誰か、いい環境構築教えてほしい。)&lt;/p&gt;
+&lt;p&gt;今は、主に&lt;em&gt;pip&lt;/em&gt;, &lt;em&gt;python3&lt;/em&gt;を使ってる。仮想環境は、&lt;em&gt;vagrant&lt;/em&gt;使ってる。&lt;br&gt;
+なにげにバランスいいと思う。&lt;/p&gt;
+&lt;p&gt;IDEは、spyberがいいと思う。ただ、これがやたら落ちる。&lt;br&gt;
+Rodeoは、rsutio慣れしてる人には使いやすいが、やたら落ちる。&lt;br&gt;
+結局、&lt;em&gt;vim&lt;/em&gt;が一番だと思う。(前に、pythonを仕事にしてる人に聞いたら、&lt;em&gt;vim&lt;/em&gt;でよくね？ってなった。)&lt;br&gt;
+jupyter使ってる人もいるけど、個人的に使いづらかった。&lt;/p&gt;
+&lt;h3 id=&#34;なんかさらっと消えた話&#34;&gt;なんか、さらっと消えた話&lt;/h3&gt;
+&lt;p&gt;いま、基本的に&lt;strong&gt;reticulate&lt;/strong&gt;使ってるのかな？、使い勝手がいいかと聞かれるとイマイチなんだけど、、、
+Rstudio自体が、pythonIDEともなるみたいな話、あったんだけど、最近は聞かなくなっちゃった。&lt;/p&gt;
+&lt;p&gt;てきとーに書いているので、鵜呑みにしないで欲しい、あと攻撃しないで欲しい。&lt;br&gt;
+python、けっこーいい言語だと思う。&lt;em&gt;anaconda&lt;/em&gt;とか、解析に必須のイメージ。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;そのうち、紹介すると思うけど、主に他言語連携ばっかりやってる。&lt;br&gt;
+LTとかも、基本そういうの多めにしようと思ってる。&lt;/p&gt;
+&lt;p&gt;いや、まじで、個人の意見だし、気にせんといてね。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>blogdownはじめました。4</title>
         <link>/p/blogdown-4/</link>
         <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
@@ -117,23 +149,32 @@
         <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
         
         <guid>/p/20201212/</guid>
-        <description>&lt;h1 id=&#34;blogdownについて&#34;&gt;blogdownについて&lt;/h1&gt;
+        <description>
+&lt;link href=&#34;./p/20201212/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;./p/20201212/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;blogdownについて&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;blogdownについて&lt;/h1&gt;
 &lt;p&gt;そうたいした内容ではないですが、このブログも&lt;strong&gt;blogdown&lt;/strong&gt;を使っているので、軽く説明してみようかなと。&lt;/p&gt;
-&lt;p&gt;まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。&lt;br&gt;
-ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。&lt;br&gt;
+&lt;p&gt;まず、blogdownというのはhugoという静的ジェネレータのrラッパーですね。はい。&lt;br /&gt;
+ぶっちゃけ、名前通りブログをつくってくれるbookdownとかrmarkdown的なものと思ってればいいかと。&lt;br /&gt;
 go言語で作られてる。&lt;/p&gt;
-&lt;h2 id=&#34;install&#34;&gt;install&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;n&#34;&gt;remotes&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;install_github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;rstudio/blogdown&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;div id=&#34;install&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;install&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;remotes::install_github(&amp;quot;rstudio/blogdown&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
 &lt;p&gt;hugoも入れるんだぜい。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;n&#34;&gt;blogdown&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;::&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;install_hugo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ここまですすめたら、スタート地点にたったも同じ。&lt;/p&gt;
-&lt;p&gt;この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。&lt;br&gt;
-すごいめんどいから、おすすめしない。&lt;br&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;blogdown::install_hugo()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;ここまですすめたら、スタート地点にたったも同じ。&lt;/p&gt;
+&lt;p&gt;この段階で、libstdとかのリンカでエラー出たら、gccをバージョンアップするか個別にソースをもってきてビルドし直すしかない。&lt;br /&gt;
+すごいめんどいから、おすすめしない。&lt;br /&gt;
 たぶん、vagrantだとこの時点で詰む。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;今日はここらへんで。&lt;br&gt;
+&lt;hr /&gt;
+&lt;p&gt;今日はここらへんで。&lt;br /&gt;
 こんな感じでゆるくやってくので。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
         </item>
         <item>
@@ -142,13 +183,22 @@ go言語で作られてる。&lt;/p&gt;
         <pubDate>Fri, 11 Dec 2020 00:00:00 +0000</pubDate>
         
         <guid>/p/20201211/</guid>
-        <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;
+        <description>
+&lt;link href=&#34;./p/20201211/index_files/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;./p/20201211/index_files/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;はじめに&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;これから、このブログをつかっていろいろ書いてみることにしてる。
 なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。&lt;/p&gt;
 &lt;p&gt;このブログは、個人の意見をもとにRとかその他諸々を書いていく。&lt;/p&gt;
-&lt;h2 id=&#34;読み方&#34;&gt;読み方&lt;/h2&gt;
+&lt;div id=&#34;読み方&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;読み方&lt;/h2&gt;
 &lt;p&gt;雑記のタグのものは、内容無いので飛ばしてくれて構わない。
 あとは、タグどおりにいろいろ書く予定。まえに書いてたブログの分もそのうち移行するのでお楽しみに。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
         </item>
         

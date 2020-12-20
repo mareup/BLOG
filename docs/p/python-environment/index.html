@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='はじめに これから、このブログをつかっていろいろ書いてみることにしてる。 なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。 このブ'><title>はじめに</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='pythonの環境構築 なんか、最近、pythonでいろいろやることへったので、スルーしてる間にどうにも状況が変わったらしい。。。 昔から、py'><title>pythonの環境構築</title>
 
-<link rel='canonical' href='../../p/20201211/'>
+<link rel='canonical' href='../../p/python-environment/'>
 
-<link rel="stylesheet" href="../../scss/style.min.css"><meta property='og:title' content='はじめに'>
-<meta property='og:description' content='はじめに これから、このブログをつかっていろいろ書いてみることにしてる。 なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。 このブ'>
-<meta property='og:url' content='/p/20201211/'>
+<link rel="stylesheet" href="../../scss/style.min.css"><meta property='og:title' content='pythonの環境構築'>
+<meta property='og:description' content='pythonの環境構築 なんか、最近、pythonでいろいろやることへったので、スルーしてる間にどうにも状況が変わったらしい。。。 昔から、py'>
+<meta property='og:url' content='/p/python-environment/'>
 <meta property='og:site_name' content='R日夜'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='R' /><meta property='article:tag' content='雑記' /><meta property='article:published_time' content='2020-12-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-12-11T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="はじめに">
-<meta name="twitter:description" content="はじめに これから、このブログをつかっていろいろ書いてみることにしてる。 なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。 このブ">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='python' /><meta property='article:tag' content='環境構築' /><meta property='article:published_time' content='2020-12-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-12-20T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="pythonの環境構築">
+<meta name="twitter:description" content="pythonの環境構築 なんか、最近、pythonでいろいろやることへったので、スルーしてる間にどうにも状況が変わったらしい。。。 昔から、py">
     </head>
     <body class="">
         <div class="container flex on-phone--column align-items--flex-start extended article-page with-toolbar">
@@ -151,7 +151,7 @@
     
 
     <h2 class="article-title">
-        <a href="../../p/20201211/">はじめに</a>
+        <a href="../../p/python-environment/">pythonの環境構築</a>
     </h2>
 
     <footer class="article-time">
@@ -163,27 +163,35 @@
 
 
 
-        <time class="article-time--published">Dec 11, 2020</time>
+        <time class="article-time--published">Dec 20, 2020</time>
     </footer></div>
 </header>
 
     <section class="article-content">
-    
-<link href="../../p/20201211/index_files/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="../../p/20201211/index_files/anchor-sections/anchor-sections.js"></script>
-
-
-<div id="はじめに" class="section level1">
-<h1>はじめに</h1>
-<p>これから、このブログをつかっていろいろ書いてみることにしてる。
-なにか起こるわけじゃないけど、気が向いたら立ち寄ってみてほしい。</p>
-<p>このブログは、個人の意見をもとにRとかその他諸々を書いていく。</p>
-<div id="読み方" class="section level2">
-<h2>読み方</h2>
-<p>雑記のタグのものは、内容無いので飛ばしてくれて構わない。
-あとは、タグどおりにいろいろ書く予定。まえに書いてたブログの分もそのうち移行するのでお楽しみに。</p>
-</div>
-</div>
+    <h2 id="pythonの環境構築">pythonの環境構築</h2>
+<p>なんか、最近、pythonでいろいろやることへったので、スルーしてる間にどうにも状況が変わったらしい。。。</p>
+<p>昔から、pythonの環境構築はめんどいもので、構築するだけで1日かかることもあった。いや、今でもめんどくさいんだけど。<br>
+それでも、一応、R勢でpythonの盛り上がりがあるのは知ってるので、ちょっと触れてみようかと。</p>
+<h2 id="以下どうでもいい内容">以下どうでもいい内容。</h2>
+<p>前は、<em>anaconda</em>で環境構築してたんだけど、これがやたら重いため、pyenvに切り替えて使ってた。
+今は、<em>sphinx</em>を主に使ってるので、スクリプト作ったりということは減った。
+<em>django</em>も面白かったけど、<em>shiny</em>のほうが使い勝手いいと思う。</p>
+<p>だけど、<em>pyenv</em>いいぞとは、まだなっていないんですね〜。(誰か、いい環境構築教えてほしい。)</p>
+<p>今は、主に<em>pip</em>, <em>python3</em>を使ってる。仮想環境は、<em>vagrant</em>使ってる。<br>
+なにげにバランスいいと思う。</p>
+<p>IDEは、spyberがいいと思う。ただ、これがやたら落ちる。<br>
+Rodeoは、rsutio慣れしてる人には使いやすいが、やたら落ちる。<br>
+結局、<em>vim</em>が一番だと思う。(前に、pythonを仕事にしてる人に聞いたら、<em>vim</em>でよくね？ってなった。)<br>
+jupyter使ってる人もいるけど、個人的に使いづらかった。</p>
+<h3 id="なんかさらっと消えた話">なんか、さらっと消えた話</h3>
+<p>いま、基本的に<strong>reticulate</strong>使ってるのかな？、使い勝手がいいかと聞かれるとイマイチなんだけど、、、
+Rstudio自体が、pythonIDEともなるみたいな話、あったんだけど、最近は聞かなくなっちゃった。</p>
+<p>てきとーに書いているので、鵜呑みにしないで欲しい、あと攻撃しないで欲しい。<br>
+python、けっこーいい言語だと思う。<em>anaconda</em>とか、解析に必須のイメージ。</p>
+<hr>
+<p>そのうち、紹介すると思うけど、主に他言語連携ばっかりやってる。<br>
+LTとかも、基本そういうの多めにしようと思ってる。</p>
+<p>いや、まじで、個人の意見だし、気にせんといてね。</p>
 
 </section>
 
@@ -192,9 +200,9 @@
     
     <section class="article-tags">
         
-            <a href="../../tags/r/">R</a>
+            <a href="../../tags/python/">python</a>
         
-            <a href="../../tags/%E9%9B%91%E8%A8%98/">雑記</a>
+            <a href="../../tags/%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89/">環境構築</a>
         
     </section>
 
@@ -225,12 +233,12 @@
                 
                     
 <article class="">
-    <a href="../../p/python-environment/">
+    <a href="../../p/20201211/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">pythonの環境構築</h2>
+            <h2 class="article-title">はじめに</h2>
         </div>
     </a>
 </article>

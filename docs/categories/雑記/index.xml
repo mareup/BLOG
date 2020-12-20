@@ -6,7 +6,16 @@
     <description>Recent content in 雑記 on R日夜</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E9%9B%91%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E9%9B%91%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pythonの環境構築</title>
+      <link>/p/python-environment/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/p/python-environment/</guid>
+      <description>pythonの環境構築 なんか、最近、pythonでいろいろやることへったので、スルーしてる間にどうにも状況が変わったらしい。。。 昔から、py</description>
+    </item>
+    
     <item>
       <title>はじめに</title>
       <link>/p/20201211/</link>
