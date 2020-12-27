@@ -6,7 +6,16 @@
     <description>Recent content in R on R日夜</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>position_dodge</title>
+      <link>/p/position-dodge/</link>
+      <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/p/position-dodge/</guid>
+      <description>ggplot2のposition いやー、なんかめっちゃ苦労して結局断念したんだけど、なぜか、position = &amp;quot;dodge&amp;quo</description>
+    </item>
+    
     <item>
       <title>blogdownはじめました。4</title>
       <link>/p/blogdown-4/</link>

@@ -6,7 +6,18 @@
         <description>Recent content on R日夜</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja</language>
-        <lastBuildDate>Sun, 20 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>position_dodge</title>
+        <link>/p/position-dodge/</link>
+        <pubDate>Sun, 27 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>/p/position-dodge/</guid>
+        <description>&lt;h2 id=&#34;ggplot2のposition&#34;&gt;ggplot2のposition&lt;/h2&gt;
+&lt;p&gt;いやー、なんかめっちゃ苦労して結局断念したんだけど、なぜか、&lt;code&gt;position = &amp;quot;dodge&amp;quot;&lt;/code&gt;が発動しなくて、、、&lt;/p&gt;
+&lt;p&gt;ちょ、ごめん、追記するから、一旦ここでおわるね。ごめ。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>pythonの環境構築</title>
         <link>/p/python-environment/</link>
         <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
@@ -23,8 +34,8 @@
 &lt;p&gt;だけど、&lt;em&gt;pyenv&lt;/em&gt;いいぞとは、まだなっていないんですね〜。(誰か、いい環境構築教えてほしい。)&lt;/p&gt;
 &lt;p&gt;今は、主に&lt;em&gt;pip&lt;/em&gt;, &lt;em&gt;python3&lt;/em&gt;を使ってる。仮想環境は、&lt;em&gt;vagrant&lt;/em&gt;使ってる。&lt;br&gt;
 なにげにバランスいいと思う。&lt;/p&gt;
-&lt;p&gt;IDEは、spyberがいいと思う。ただ、これがやたら落ちる。&lt;br&gt;
-Rodeoは、rsutio慣れしてる人には使いやすいが、やたら落ちる。&lt;br&gt;
+&lt;p&gt;IDEは、spyderがいいと思う。ただ、これがやたら落ちる。&lt;br&gt;
+Rodeoは、rstudio慣れしてる人には使いやすいが、やたら落ちる。&lt;br&gt;
 結局、&lt;em&gt;vim&lt;/em&gt;が一番だと思う。(前に、pythonを仕事にしてる人に聞いたら、&lt;em&gt;vim&lt;/em&gt;でよくね？ってなった。)&lt;br&gt;
 jupyter使ってる人もいるけど、個人的に使いづらかった。&lt;/p&gt;
 &lt;h3 id=&#34;なんかさらっと消えた話&#34;&gt;なんか、さらっと消えた話&lt;/h3&gt;
